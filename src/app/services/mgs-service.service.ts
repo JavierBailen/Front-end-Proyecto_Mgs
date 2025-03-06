@@ -8,7 +8,7 @@ import { MgsPersonaje } from '../interfaces/mgs-personaje';
 })
 export class MgsServiceService {
 
-  private apiUrl = 'http://localhost:3000/api/personajes';
+  private apiUrl = 'https://backend-proyecto-mgs.onrender.com/api/personajes';
 
   constructor(private http: HttpClient) {
 
