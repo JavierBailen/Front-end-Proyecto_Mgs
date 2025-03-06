@@ -11,15 +11,14 @@ import { Observable, of } from 'rxjs';
 })
 export class LoginPageComponent {
 
-  username: string = '';
-  password: string = '';
+  
 
   constructor(private authService: AuthServiceService, private router: Router){
 
   }
 
   onLogin():void{
-    this.authService.login(this.username, this.password)
+    this.authService.login("JavierBailen", "extremoduro5")
     .subscribe( user=>{
         this.router.navigate(['/'])
     })
