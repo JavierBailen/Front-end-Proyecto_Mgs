@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
   styles: ``
 })
 export class LayoutPageComponent {
+  
   public sidebarItems = [
     {label:'Listado', icon: 'label', url:'./list'},
     {label:'Buscar', icon: 'search', url:'./search'},

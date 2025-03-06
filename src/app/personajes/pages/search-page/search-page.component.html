@@ -4,6 +4,7 @@
     <h4>Buscador</h4>
     <mat-form-field>
       <mat-label>Buscador de Personajes</mat-label>
+
       <input
       type="text"
       matInput
@@ -11,6 +12,7 @@
       (input)="buscarPersonaje()"
       [matAutocomplete]="auto"
       />
+      
       <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" (optionSelected)="onSelectedOption($event)">
         <mat-option *ngFor="let personaje of personajes" [value]="personaje">
             {{personaje.nombre}}

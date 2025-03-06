@@ -31,7 +31,7 @@ export class NewPersonajeComponent implements OnInit{
         if ( !personaje ) return this.router.navigateByUrl('/');
       
         this.personajeForm.reset ( personaje );
-        //Si devuelve "hero" completo el formulario con los datos
+        
         return;
       })
   }

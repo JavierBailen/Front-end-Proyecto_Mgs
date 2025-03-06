@@ -45,10 +45,10 @@ export class AuthServiceService {
     const token = localStorage.getItem('token');
 
     return this.httpClient.get<UserInterface>(`${ this.apiUrl }/1`)
-            .pipe (
-              tap ( user => this.user=user),
-              map ( user => !!user),
-              catchError ( err => of(false))
+            .pipe(
+              tap( user => this.user=user),
+              map( user => !!user),
+              catchError( err => of(false))
             )
   }
   
