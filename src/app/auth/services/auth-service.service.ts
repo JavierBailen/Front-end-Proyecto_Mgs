@@ -8,7 +8,7 @@ import { catchError, map, Observable, of, tap } from 'rxjs';
 })
 export class AuthServiceService {
 
-  private apiUrl = 'https://backend-proyecto-mgs.onrender.com/api/usuarios/login';
+  private apiUrl = 'https://backend-proyecto-mgs.onrender.com/api/usuarios';
   private user?: UserInterface;
 
   constructor(private httpClient: HttpClient) { 
