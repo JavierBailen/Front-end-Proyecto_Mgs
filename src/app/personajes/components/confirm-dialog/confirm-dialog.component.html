@@ -1,0 +1,10 @@
+<h2>¿Estás seguro que quieres borrar este personaje?</h2>
+<mat-dialog-content>
+    Se borrará permanentemente el personaje {{data.nombre}}, ¿Quieres continuar?
+</mat-dialog-content>
+<mat-dialog-actions>
+     <button mat-button (click)="onNoClick()">No quiero borrarlo</button> 
+     <span class="spacer"></span>
+   <button mat-button (click)="onConfirm()" cdkFocusInitial>De acuerdo</button>
+
+</mat-dialog-actions>

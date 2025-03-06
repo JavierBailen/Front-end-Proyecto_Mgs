@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+
+    <mat-sidenav-container fullscreen class="">
+
+        <mat-sidenav #sidenav mode="push" [ngStyle]="{width:'250px'}">
+            <mat-toolbar>
+                <span>Menú</span>
+                <span class="spacer"></span>
+                <button mat-icon-button (click)="sidenav.toggle()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </mat-toolbar>
+    
+            <mat-nav-list>
+                <mat-list-item *ngFor="let item of sidebarItems" [routerLink]="item.url" (click)="sidenav.toggle()">
+                    <mat-icon>{{item.icon}}</mat-icon>
+                    {{item.label}}
+                </mat-list-item>
+            </mat-nav-list>
+    
+        </mat-sidenav>
+    
+    
+        <mat-toolbar color="primary">
+            <button mat-icon-button (click)="sidenav.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+    
+            <span class="spacer"></span>
+            <span>{{user?.username}}</span>
+
+            <button mat-button (click)="onLogout()" (click)="playSonidoLogout()">
+                Logout
+            </button>
+    
+        </mat-toolbar>
+    
+        <div class="container p-2">
+            <router-outlet></router-outlet>
+        </div>
+    
+    </mat-sidenav-container>
+    
+</body>
+</html>
+
+
+
+
+

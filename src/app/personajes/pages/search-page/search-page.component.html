@@ -1,0 +1,39 @@
+<h1>Buscar personajes</h1>
+
+<div class="flex flex-column p-2">
+    <h4>Buscador</h4>
+    <mat-form-field>
+      <mat-label>Buscador de Personajes</mat-label>
+      <input
+      type="text"
+      matInput
+      [formControl] ="inputBuscador"
+      (input)="buscarPersonaje()"
+      [matAutocomplete]="auto"
+      />
+      <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" (optionSelected)="onSelectedOption($event)">
+        <mat-option *ngFor="let personaje of personajes" [value]="personaje">
+            {{personaje.nombre}}
+        </mat-option>
+        <mat-option *ngIf="personajes.length===0 && inputBuscador.value && inputBuscador.value.length >0" value="">
+                No se ha encontrado ningun personaje como {{inputBuscador.value}}
+        </mat-option>
+
+      </mat-autocomplete>
+
+
+      <h3>{{personajeSeleccionado?.nombre}}</h3>
+      <img src="{{personajeSeleccionado?.imagen}}" alt="">
+      <p>{{personajeSeleccionado?.descripcion}}</p>
+      
+    </mat-form-field>
+
+    <button mat-button [routerLink]="['personajes/list']">
+      <mat-icon>back</mat-icon>
+              Volver al listado
+    </button>
+
+    
+    
+
+  </div>

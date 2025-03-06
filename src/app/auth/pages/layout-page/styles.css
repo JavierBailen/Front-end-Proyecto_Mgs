@@ -1,0 +1,10 @@
+body{
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/391c9a64-76dd-45c4-8923-9674e5cbd45a/dbv5993-c8ac03a4-7b20-49a7-a641-8130324ebd7c.png/v1/fill/w_1024,h_576/metal_gear_solid__saga___wallpaper_by_xerlientt_dbv5993-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvMzkxYzlhNjQtNzZkZC00NWM0LTg5MjMtOTY3NGU1Y2JkNDVhXC9kYnY1OTkzLWM4YWMwM2E0LTdiMjAtNDlhNy1hNjQxLTgxMzAzMjRlYmQ3Yy5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.46Xy5PnWncV4wfjk7rxbF5vHpcHGYJcJDcUgfgKW8YY');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    background-attachment: fixed; /* Esto asegura que el fondo se quede fijo */
+    background-color: #000;
+}

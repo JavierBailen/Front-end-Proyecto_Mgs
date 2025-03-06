@@ -1,0 +1,23 @@
+<mat-card class="personaje-card">
+    <mat-card-header>
+      <mat-card-title class="text-center">
+        {{ personaje.nombre }}
+      </mat-card-title>
+    </mat-card-header>
+  
+    <img mat-card-image [src]="personaje.imagen" alt="{{ personaje.nombre }}" class="personaje-img">
+  
+    <mat-card-content>
+      <p class="descripcion">
+        {{ personaje.descripcion }}
+      </p>
+    </mat-card-content>
+  
+    <mat-card-actions align="end">
+      <button mat-raised-button color="primary"  [routerLink]="['/personajes/edit', personaje.id]">
+        <mat-icon>edit</mat-icon>
+        Editar
+      </button>
+    </mat-card-actions>
+  </mat-card>
+  

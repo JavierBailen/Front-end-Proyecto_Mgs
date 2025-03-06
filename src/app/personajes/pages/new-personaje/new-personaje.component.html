@@ -1,0 +1,65 @@
+<h3>Editar/Agregar Personaje</h3>
+
+<mat-divider class="mb-2"></mat-divider>
+
+<form class="grid" [formGroup]="personajeForm" (ngSubmit)="onSubmit()">
+    <div class="col-12 sm:col-6">
+      <mat-card>
+        <mat-card-content>
+          <div class="grid">
+            <mat-form-field class="col-12 sm:col-6">
+              <mat-label>Personaje(Nombre)</mat-label>
+              <input
+                matInput
+                type="text"
+                required
+                formControlName="nombre"
+              />
+            </mat-form-field>
+            
+            <mat-form-field class="col-12 sm:col-6">
+                <mat-label>Descripción</mat-label>
+                <input
+                  matInput
+                  type="text"
+                  required
+                  formControlName="descripcion"
+                />
+              </mat-form-field>
+          </div>
+
+          <mat-form-field class="col-12">
+            <mat-label>Imagen</mat-label>
+            <input
+              matInput
+              type="text"
+              required
+              formControlName="imagen"
+            />
+          </mat-form-field>
+
+          <div class="flex justify-content-between">
+                <button mat-flat-button *ngIf="currentPersonaje.id"  (click)="onDeletePersonaje()" (click)="playSonido()">
+                  Borrar
+                </button>
+
+                <button mat-flat-button type="submit">
+                    <mat-icon>save</mat-icon>
+                                Guardar
+                </button>
+          </div>
+        </mat-card-content>
+        <button mat-button [routerLink]="['/personajes/list']">
+          Volver al listado 
+        </button>
+      </mat-card>
+    </div>
+
+    <div class="col-12 sm:col-6">
+        <mat-card>
+            <img [src]="currentPersonaje | personajeImage" alt="{{currentPersonaje.nombre}}">
+        </mat-card>
+    </div>
+</form>
+
+

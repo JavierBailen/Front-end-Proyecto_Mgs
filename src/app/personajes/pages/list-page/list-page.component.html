@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="text-center">Listado de Personajes Metal Gear</h1>
+
+<mat-divider></mat-divider>
+
+<div class="grid mb-8">
+
+
+    <div  *ngFor="let personaje of personajes" class="col-12 sm:col-4 md:col-3 xl:col-2">
+        <app-personaje-component [personaje]="personaje"></app-personaje-component>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

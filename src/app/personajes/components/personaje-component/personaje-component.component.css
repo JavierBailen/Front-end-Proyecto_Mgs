@@ -1,0 +1,25 @@
+.personaje-card {
+    width: 300px; /* Más ancha la tarjeta */
+    margin: 10px auto; /* Centrada */
+    border: 2px solid #1a1a1a; /* Bordecito como MGS */
+    background-color: #252525; /* Fondo oscuro */
+    color: #fff; /* Letra blanca */
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3); /* Brillito verde hacker 🔥 */
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .personaje-card:hover {
+    transform: scale(1.05); /* Efecto cuando pasas el ratón */
+  }
+  
+  .personaje-img {
+    object-fit: cover; /* Ajusta la imagen */
+    height: 700px; 
+    border-bottom: 2px solid #0f0; /* Línea verde bajo la imagen */
+  }
+  
+  .descripcion {
+    text-align: justify; /* Para que la descripción se ajuste */
+    padding: 10px;
+  }
+  

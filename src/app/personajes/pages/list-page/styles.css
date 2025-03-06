@@ -1,0 +1,15 @@
+body{
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/34426784-5198-4c8c-a48b-0e94b81a7fde/dh2skrc-9abe5cf6-0c2b-4f72-8787-4aafeeb74e56.jpg/v1/fill/w_1192,h_670,q_70,strp/metal_gear_solid_2_logoless_title_screen_by_d0d0g0ne_dh2skrc-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjY4OCIsInBhdGgiOiJcL2ZcLzM0NDI2Nzg0LTUxOTgtNGM4Yy1hNDhiLTBlOTRiODFhN2ZkZVwvZGgyc2tyYy05YWJlNWNmNi0wYzJiLTRmNzItODc4Ny00YWFmZWViNzRlNTYuanBnIiwid2lkdGgiOiI8PTQ3NzgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Sneie5O4qM72A_1G9t3wvJ4q8QtHCEHIigRHTeu8Nec');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    background-attachment: fixed; /* Esto asegura que el fondo se quede fijo */
+    background-color: #000;
+   
+}
+
+h1{
+    color: white;
+}

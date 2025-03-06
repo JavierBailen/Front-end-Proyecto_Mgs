@@ -1,0 +1,35 @@
+
+
+
+
+
+
+<ng-template #divLoading>
+    <mat-grid-list cols="1">
+        <mat-grid-tile>
+            <mat-spinner></mat-spinner>
+        </mat-grid-tile>
+    </mat-grid-list>
+</ng-template>
+
+<div *ngIf="personajeBuscado; else divLoading" class="grid p-2 m-3">
+    <mat-card class="col-12 sm:col-6">
+        <mat-card-header>
+            <mat-card-title>{{personajeBuscado.nombre}}</mat-card-title>
+        </mat-card-header>
+        <img src="{{personajeBuscado.imagen}}">
+    </mat-card>
+    <mat-card class="col-12 sm:col-6">
+        <mat-card-header>
+            <mat-card-title>Descripción</mat-card-title>
+            <mat-card-subtitle>{{personajeBuscado.descripcion}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-list>
+            <button mat-button (click)="golist()">
+                Regresar
+            </button>
+        </mat-list>
+    </mat-card>
+    
+    
+</div>
